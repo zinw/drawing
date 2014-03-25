@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Drawing demo</title>
+    <style type="text/css">
+        *,
+        *:before,
+        *:after {
+            /* 包含边框&内填充到宽高盒模型 */
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            background: #ccc;
+        }
+        canvas {
+            cursor: crosshair;
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<script src="js/drawing.js"></script>
+<script>drawing();</script>
+</body>
+</html>
